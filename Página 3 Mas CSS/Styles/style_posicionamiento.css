@@ -1,0 +1,43 @@
+div{
+ width: 90px;
+ height: 90px;
+ background-color: cyan;
+ border: indigo 2px solid;
+ position: relative;
+}
+
+/*Position relative con pixeles*/
+
+.d1{
+ position: relative;
+ top: 0px;
+}
+
+#d1{
+ position: relative;
+ top: -95px;
+ right: -110px;
+}
+
+.d2{
+ position: relative;
+ top: -188px;
+ right: -220px;
+}
+
+#d2{
+ position: relative;
+ top: -283px;
+ right: -330px;
+}
+
+.d3{
+ position: relative;
+ top: -376px;
+ right: -440px;
+}
+
+div>p{
+ position: absolute;
+ top: 6px;
+}
