@@ -1,0 +1,58 @@
+div{
+ width: 90px;
+ height: 90px;
+ background-color: cyan;
+ /*background-color: rgba(0,255,255,0.7);*/
+ border: indigo 2px solid;
+ position: relative;
+ border-radius: 6px;
+}
+
+/*Position absolute y z-index*/
+
+.d1{
+ top: 10px;
+ left: 10px;
+ position: absolute;
+ z-index: 4;
+ background-color: rgba(0,255,255,0.6);
+ /*z-index: 8;*/
+}
+
+#d1{
+ position: absolute;
+ top: 10px;
+ left: 70px;
+ z-index: 2;
+ background-color: rgba(0,255,255,0.8);
+ /*z-index: 6;*/
+}
+
+.d2{
+ position: absolute;
+ top: 10px;
+ left: 140px;
+ z-index: -4;
+ background-color: rgba(0,255,255,1);
+}
+
+#d2{
+ position: absolute;
+ top: 10px;
+ left: 210px;
+ z-index: -2;
+ background-color: rgba(0,255,255,0.8);
+}
+
+.d3{
+ position: absolute;
+ top: 10px;
+ left: 280px;
+ z-index: 0;
+ background-color: rgba(0,255,255,0.6);
+}
+
+div>p{
+ position: absolute;
+ top: 6px;
+}
