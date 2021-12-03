@@ -1,0 +1,219 @@
+			/*General*/
+
+body{
+	background-color: green;
+}
+
+			/*Tipo de carta*/
+
+.cartaroja{
+	background-color: white;
+	border: 2px red solid;
+	border-radius: 5px;
+	height: 300px;
+	width: 200px;
+	color: red;
+	position: relative;
+}
+
+.carta{
+	background-color: white;
+	border: 2px black solid;
+	border-radius: 5px;
+	height: 300px;
+	width: 200px;
+	color: black;
+	position: relative;
+}
+
+			/*Simbolo para las esquinas*/
+
+.simboloesqu{
+	font-size: 18px;
+}
+
+.numero{
+	font-size: 18px;
+}
+
+.arriba{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.abajo{
+	position: absolute;
+	transform: rotate(180deg);
+	bottom: 0px;
+	right: 0px;
+}
+
+			/*Simbolo para la carta*/
+
+#simbolo{
+	font-size: 45px;
+	position: absolute;
+}
+
+			/*Simbolo para el as*/
+
+#simboloas{
+	font-size: 100px;
+	position: absolute;
+}
+
+			/*Carta numero AS*/
+
+#as>.simbolo1{
+	top: 100px;
+	right: 55px;
+}
+
+			/*Carta numero 2*/
+
+#dos>.simbolo1{
+	bottom: 70px;
+	right: 50px;
+	transform: rotate(180deg);
+}
+#dos>.simbolo2{
+	top: 70px;
+	left: 50px;
+}
+
+			/*Carta numero 3*/
+
+#tres>.simbolo1{
+	bottom: 60px;
+	right: 85px;
+	transform: rotate(180deg);
+}
+#tres>.simbolo2{
+	top: 60px;
+	right: 85px;
+}
+#tres>.simbolo3{
+	top: 120px;
+	right: 85px;
+}
+
+			/*Carta numero 4*/
+
+#cuatro>.simbolo1{
+	top: 70px;
+	right: 50px;
+}
+#cuatro>.simbolo2{
+	top: 70px;
+	left: 50px;
+}
+#cuatro>.simbolo3{
+	bottom: 70px;
+	left: 50px;
+	transform: rotate(180deg);
+}
+#cuatro>.simbolo4{
+	bottom: 70px;
+	right: 50px;
+	transform: rotate(180deg);
+}
+
+			/*Carta numero 5*/
+
+#cinco>.simbolo1{
+	top: 70px;
+	right: 50px;
+}
+#cinco>.simbolo2{
+	top: 70px;
+	left: 50px;
+}
+#cinco>.simbolo3{
+	top: 130px;
+	right: 85px;
+}
+#cinco>.simbolo4{
+	bottom: 70px;
+	right: 50px;
+}
+#cinco>.simbolo5{
+	bottom: 70px;
+	left: 50px;
+}
+
+			/*Carta numero 7*/
+
+#siete>.simbolo1{
+	top: 40px;
+	right: 50px;
+}
+#siete>.simbolo2{
+	top: 40px;
+	left: 50px;
+}
+#siete>.simbolo3{
+	top: 80px;
+	right: 85px;
+}
+#siete>.simbolo4{
+	top: 130px;
+	right: 50px;
+}
+#siete>.simbolo5{
+	top: 130px;
+	left: 50px;
+}#siete>.simbolo6{
+	bottom: 40px;
+	right: 50px;
+	transform: rotate(180deg);
+}
+#siete>.simbolo7{
+	bottom: 40px;
+	left: 50px;
+	transform: rotate(180deg);
+}
+
+			/*Orden*/
+
+#dostrebol{
+	position: absolute;
+	top: 110px;
+	left: 80px;
+	transform: rotate(-20deg);
+	z-index: 5;
+}
+
+#trespica{
+	position: absolute;
+	top: 80px;
+	left: 150px;
+	transform: rotate(0deg);
+	z-index: 4;
+}
+
+#cuatrotrebol{
+	position: absolute;
+	top: 80px;
+	left: 250px;
+	transform: rotate(20deg);
+	z-index: 3
+}
+
+#sietetrebol{
+	position: absolute;
+	top: 100px;
+	left: 320px;
+	transform: rotate(30deg);
+	z-index: 2;
+}
+
+#cincocorazon{
+	position: absolute;
+	top: 140px;
+	left: 400px;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+
