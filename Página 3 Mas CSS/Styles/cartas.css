@@ -8,8 +8,8 @@ body{
 
 .cartaroja{
 	background-color: white;
-	border: 2px red solid;
-	border-radius: 5px;
+	border: 2px black solid;
+	border-radius: 10px;
 	height: 300px;
 	width: 200px;
 	color: red;
@@ -19,7 +19,7 @@ body{
 .carta{
 	background-color: white;
 	border: 2px black solid;
-	border-radius: 5px;
+	border-radius: 10px;
 	height: 300px;
 	width: 200px;
 	color: black;
@@ -29,24 +29,24 @@ body{
 			/*Simbolo para las esquinas*/
 
 .simboloesqu{
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .numero{
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .arriba{
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 2px;
+	left: 2px;
 }
 
 .abajo{
 	position: absolute;
 	transform: rotate(180deg);
-	bottom: 0px;
-	right: 0px;
+	bottom: 2px;
+	right: 2px;
 }
 
 			/*Simbolo para la carta*/
@@ -122,23 +122,23 @@ body{
 			/*Carta numero 5*/
 
 #cinco>.simbolo1{
-	top: 70px;
+	top: 60px;
 	right: 50px;
 }
 #cinco>.simbolo2{
-	top: 70px;
+	top: 60px;
 	left: 50px;
 }
 #cinco>.simbolo3{
-	top: 130px;
-	right: 85px;
+	top: 125px;
+	right: 80px;
 }
 #cinco>.simbolo4{
-	bottom: 70px;
+	bottom: 60px;
 	right: 50px;
 }
 #cinco>.simbolo5{
-	bottom: 70px;
+	bottom: 60px;
 	left: 50px;
 }
 
@@ -153,8 +153,8 @@ body{
 	left: 50px;
 }
 #siete>.simbolo3{
-	top: 80px;
-	right: 85px;
+	top: 85px;
+	right: 80px;
 }
 #siete>.simbolo4{
 	top: 130px;
@@ -174,46 +174,129 @@ body{
 	transform: rotate(180deg);
 }
 
-			/*Orden*/
+			/* Customización de cartas por ID real */
 
 #dostrebol{
 	position: absolute;
 	top: 110px;
 	left: 80px;
 	transform: rotate(-20deg);
-	z-index: 5;
+	z-index: 1;
 }
 
 #trespica{
 	position: absolute;
-	top: 80px;
-	left: 150px;
-	transform: rotate(0deg);
-	z-index: 4;
+	top: 110px;
+	left: 80px;
+	transform: rotate(-20deg);
+	z-index: 2;
+	animation-name: trespicaabre;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	animation-delay: 1s;
 }
 
 #cuatrotrebol{
 	position: absolute;
-	top: 80px;
-	left: 250px;
-	transform: rotate(20deg);
-	z-index: 3
+	top: 110px;
+	left: 80px;
+	transform: rotate(-20deg);
+	z-index: 3;
+	animation-name: cuatrotrebolabre;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	animation-delay: 1s;
 }
 
 #sietetrebol{
 	position: absolute;
-	top: 100px;
-	left: 320px;
-	transform: rotate(30deg);
-	z-index: 2;
+	top: 110px;
+	left: 80px;
+	transform: rotate(-20deg);
+	z-index: 4;
+	animation-name: sietetrebolabre;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	animation-delay: 1s;
 }
 
 #cincocorazon{
 	position: absolute;
-	top: 140px;
-	left: 400px;
-	transform: rotate(45deg);
-	z-index: 1;
+	top: 110px;
+	left: 80px;
+	transform: rotate(-20deg);
+	z-index: 5;
+	animation-name: cincocorazonabre;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	animation-delay: 1s;
 }
 
+			/* Animaciones */
+			/* Animacion CARTA 5 CORAZONES*/
 
+@keyframes cincocorazonabre {
+	0% {
+		top: 110px;
+		left: 80px;
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		top: 140px;
+		left: 400px;
+		transform: rotate(45deg);
+	}
+}
+
+			/* Animacion CARTA 7 TREBOLES*/
+
+@keyframes sietetrebolabre {
+	0% {
+		top: 110px;
+		left: 80px;
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		top: 100px;
+		left: 320px;
+		transform: rotate(30deg);
+	}
+}
+
+			/* Animacion CARTA 4 TREBOLES*/
+
+@keyframes cuatrotrebolabre {
+	0% {
+		top: 110px;
+		left: 80px;
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		top: 80px;
+		left: 250px;
+		transform: rotate(20deg);
+	}
+}
+
+			/* Animacion CARTA 3 PICAS*/
+
+@keyframes trespicaabre {
+	0% {
+		top: 110px;
+		left: 80px;
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		top: 80px;
+		left: 150px;
+		transform: rotate(-2deg);
+	}
+}
